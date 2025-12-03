@@ -1,0 +1,337 @@
+/*GLOBALLY*/
+@font-face {
+  font-family: "vazirmatn";
+  src: url(../woff/Vazirmatn-Light_2.woff) format(wof);
+}
+@font-face {
+  font-family: "vazirmatn";
+  src: url(../woff/Vazirmatn-Regular_2.woff) format(wof)
+    url(../ttf/Vazirmatn-Regular.ttf);
+}
+* {
+  font-family: "vazirmatn";
+  transition: all 0.3s;
+  direction: rtl;
+}
+body {
+  background-color: #f5f5f5;
+  padding: 0px;
+  color: #333533;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #a0a0a0;
+}
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*HEADER*/
+
+.header .position i,
+.header .title h1,
+.butten i {
+  color: #000000;
+}
+
+.header,
+.container {
+  display: flex;
+  padding: 45px 0;
+  justify-content: center;
+}
+.header {
+  background-color: pink;
+  height: 300px;
+  align-items: center;
+  align-items: center;
+}
+.header .title {
+  margin: 0 50px;
+}
+.header .title h1 {
+  margin: 0;
+  line-height: 1;
+  font-size: 50px;
+}
+
+.header .position {
+  color: #000000;
+  font-weight: 350;
+  margin-bottom: 35px;
+}
+.header .position i {
+  margin-right: 6px;
+}
+.butten {
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 8px 24px;
+}
+.butten:hover,
+.butten:hover i {
+  background-color: #ffd100;
+  color: #333533;
+}
+.butten i {
+  margin-right: 6px;
+}
+.lang {
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 4px 8px;
+  opacity: 0.5;
+  font-size: 12px;
+  align-self: flex-start;
+}
+.lang i {
+  color: #f5f5f5;
+  margin-right: 4px;
+}
+.lang:hover,
+.lang i:hover {
+  opacity: 1;
+}
+
+.header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.butten i {
+  margin-right: 10px;
+}
+
+/*NAVBAR*/
+
+.container nav {
+  width: 250px;
+  font-size: 20px;
+  padding-right: 40px;
+}
+.container nav ul li:hover {
+  cursor: pointer;
+}
+.container nav li.active {
+  font-weight: 600;
+}
+.container nav ul li .marker {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #333533;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 42px;
+  margin-left: 12px;
+}
+.container nav ul li.active .marker,
+.container nav ul li:hover .marker {
+  background-color: #333533;
+  color: #ffd100;
+  font-size: 22px;
+}
+.container nav ul li:not(:last-child):after {
+  content: "";
+  display: block;
+  height: 48px;
+  border-right: 1px dashed #333533;
+  margin: 16px 21px 16px 0px;
+}
+
+/*SECTIONS*/
+
+.section {
+  width: 700px;
+  border-right: 1px solid #333533;
+  padding-right: 50px;
+}
+.section section:last-child {
+  width: 880px;
+}
+.contact {
+  display: flex;
+}
+.contact div {
+  width: 50%;
+}
+.contact p {
+  margin: 0px;
+}
+.contact i {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #a0a0a0;
+  cursor: pointer;
+}
+.contact i:hover {
+  color: #333533;
+}
+.social li {
+  display: inline-block;
+  margin-left: 24px;
+}
+.social li span {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+}
+
+.social li span.github {
+  background-image: url("../icons/social/github.png");
+}
+.social li span.github:hover {
+  background-image: url("../icons/social/social-hover/github-hover.png");
+}
+
+.social li span.linkedin {
+  background-image: url("../icons/social/linkedin.png");
+}
+.social li span.linkedin:hover {
+  background-image: url("../icons/social/social-hover/linkedin-hover.png");
+}
+.social li span.twitter {
+  background-image: url("../icons/social/twitter.png");
+}
+.social li span.twitter:hover {
+  background-image: url("../icons/social/social-hover/twitter-hover.png");
+}
+.social li span.whatsapp {
+  background-image: url("../icons/social/whatsapp.png");
+}
+.social li span.whatsapp:hover {
+  background-image: url("../icons/social/social-hover/whatsapp-hover.png");
+}
+.social li span.instagram {
+  background-image: url("../icons/social/instagram.png");
+}
+.social li span.instagram:hover {
+  background-image: url("../icons/social/social-hover/instagram-hover.png");
+}
+
+.social li span.stackoverflow {
+  background-image: url("../icons/social/stackoverflow.png");
+}
+.social li span.stackoverflow:hover {
+  background-image: url("../icons/social/social-hover/stackoverflow-hover.png");
+}
+
+.social li span.telegram {
+  background-image: url("../icons/social/telegram.png");
+}
+.social li span.telegram:hover {
+  background-image: url("../icons/social/social-hover/telegram-hover.png");
+}
+.skills li {
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 24px;
+  align-items: center;
+}
+.skills li img {
+  vertical-align: middle;
+  margin-left: 6px;
+}
+.skills .title {
+  font-weight: 600;
+}
+.skills li i {
+  padding: 10px 12px;
+  border-right: 1px solid #a0a0a0;
+}
+.other-skills li {
+  display: inline-block;
+  border: 1px solid #a0a0a0;
+  padding: 4px 16px;
+  border-radius: 24px;
+  margin: 0px 0px 18px 16px;
+}
+.My-projects {
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  padding: 11px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.My-projects h5 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.My-projects .description {
+  font-size: 14px;
+}
+.Tech-used {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Tech-used ul li {
+  display: inline-block;
+}
+.Tech-used ul li img {
+  width: 25px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.My-projects {
+  margin-bottom: 36px;
+}
+.My-projects h5 {
+  margin-bottom: 5px;
+}
+.projects .My-projects:not(:last-child) {
+  margin-left: 20px;
+}
+.My-projects .buttens {
+  display: flex;
+}
+.My-projects .buttens a {
+  width: 50%;
+  color: #333533;
+  border: 1px solid transparent;
+  font-size: 13px;
+  padding: 2px 8px;
+  font-weight: 500;
+  text-align: center;
+}
+.My-projects.buttens a i {
+  margin-right: 5px;
+}
+.My-projects .buttens a:last-child {
+  margin-right: 4px;
+}
+.My-projects .buttens a:last-child,
+.My-projects .buttens a:first-child:hover {
+  border: 1px solid #333533;
+  border-radius: 4px;
+}
+.My-projects .buttens a:last-child:hover {
+  background-color: #333533;
+  color: #f5f5f5;
+}
+.mobile-nav {
+  display: none;
+}
