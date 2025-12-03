@@ -1,0 +1,128 @@
+@media all and (max-width: 992px) {
+  body,
+  h5 {
+    background-color: #fafafa;
+    font-size: 16px;
+  }
+
+  .container nav {
+    display: none;
+  }
+
+  .sections,
+  .sections section:last-child {
+    width: auto;
+    border-left: none;
+  }
+
+  .header,
+  .container {
+    padding: 0;
+  }
+  .header {
+    height: auto;
+  }
+  .lang {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .header img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 75px;
+  }
+  .header .position i,
+  .header .position,
+  .header .title h1,
+  .butten i {
+    color: #333533;
+  }
+  .header .title h1 {
+    font-size: 35px;
+  }
+  .header .position {
+    font-size: 24px;
+    margin: 30px 0;
+  }
+
+  .title .butten {
+    border: 1px solid #333533;
+    width: 100%;
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    background-color: #fafafa;
+    color: #333533;
+  }
+
+  .header .title {
+    background-color: #fafafa;
+    color: #333533;
+    width: 100%;
+    margin: 0;
+    margin-top: 150px;
+    text-align: center;
+    padding: 100px 20px 60px;
+  }
+  .sections {
+    padding: 0 20px;
+    margin: 0;
+  }
+  .sections section {
+    border-top: 1px solid #a0a0a0;
+    padding: 60px 0;
+  }
+  .sections section h4 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333533;
+  }
+  .contact {
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  .contact div {
+    width: 100%;
+  }
+  .projects {
+    flex-wrap: wrap;
+    margin-right: 0 !important;
+  }
+  .My-projects {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+  .mobile-nav {
+    display: block;
+    background-color: #333533;
+    color: #fafafa;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .mobile-nav ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    flex: 1;
+  }
+  .mobile-nav ul li i {
+    margin-right: 5px;
+  }
+  .mobile-nav ul li.act {
+    color: #ffd100;
+    border-bottom: 4px solid #ffd100;
+  }
+}
