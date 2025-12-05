@@ -73,13 +73,17 @@
     padding: 100px 20px 60px;
   }
   .sections {
+    width: auto;
     padding: 0 20px;
     margin: 0;
   }
   .sections section {
     border-top: 1px solid #a0a0a0;
     padding: 60px 0;
+    width: auto;
+    margin: 0;
   }
+
   .sections section h4 {
     margin-top: 0;
     font-size: 20px;
@@ -92,14 +96,7 @@
   .contact div {
     width: 100%;
   }
-  .projects {
-    flex-wrap: wrap;
-    margin-right: 0 !important;
-  }
-  .My-projects {
-    width: 100%;
-    margin-right: 0 !important;
-  }
+
   .mobile-nav {
     display: block;
     background-color: #00eeff;
