@@ -9,10 +9,9 @@
     display: none;
   }
 
-  .sections,
-  .sections section:last-child {
+  .sections {
     width: auto;
-    border-left: none;
+    border-right: none;
   }
 
   .header,
@@ -76,6 +75,12 @@
     width: auto;
     padding: 0 20px;
     margin: 0;
+    border-right: none;
+  }
+  .section {
+    margin: 0;
+    border-right: none;
+    padding: 0px 20px;
   }
   .sections section {
     border-top: 1px solid #a0a0a0;
