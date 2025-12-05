@@ -23,9 +23,10 @@ ul {
   list-style: none;
 }
 h5 {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 500;
   color: #a0a0a0;
+  margin-bottom: 5px;
 }
 h6 {
   margin: 0;
@@ -35,8 +36,11 @@ a {
   text-decoration: none;
 }
 
-/*HEADER*/
+/* HEADER */
 
+.header h1 {
+  font-family: "Courier New", Courier, monospace;
+}
 .header .position i,
 .header .title h1,
 .butten i {
@@ -46,12 +50,12 @@ a {
 .header,
 .container {
   display: flex;
-  padding: 45px 0;
+  padding: 25px 0px;
   justify-content: center;
 }
 .header {
   background-color: pink;
-  height: 300px;
+  height: 200px;
   align-items: center;
   align-items: center;
 }
@@ -61,7 +65,6 @@ a {
 .header .title h1 {
   margin: 0;
   line-height: 1;
-  font-size: 50px;
 }
 
 .header .position {
@@ -80,11 +83,11 @@ a {
 }
 .butten:hover,
 .butten:hover i {
-  background-color: #ffd100;
+  background-color: rgb(255, 121, 143);
   color: #333533;
 }
 .butten i {
-  margin-right: 6px;
+  margin-left: 6px;
 }
 .lang {
   color: #000000;
@@ -92,12 +95,13 @@ a {
   border-radius: 4px;
   padding: 4px 8px;
   opacity: 0.5;
+
   font-size: 12px;
   align-self: flex-start;
 }
 .lang i {
-  color: #f5f5f5;
-  margin-right: 4px;
+  color: #000000;
+  margin-left: 4px;
 }
 .lang:hover,
 .lang i:hover {
@@ -108,9 +112,10 @@ a {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin-left: 30px;
 }
 .butten i {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /*NAVBAR*/
@@ -119,12 +124,16 @@ a {
   width: 250px;
   font-size: 20px;
   padding-right: 40px;
+  position: fixed;
+  right: 40px;
+  top: 280px;
 }
 .container nav ul li:hover {
   cursor: pointer;
 }
-.container nav li.active {
-  font-weight: 600;
+.container nav li {
+  font-weight: 900;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
 }
 .container nav ul li .marker {
   width: 42px;
@@ -139,8 +148,10 @@ a {
 }
 .container nav ul li.active .marker,
 .container nav ul li:hover .marker {
-  background-color: #333533;
-  color: #ffd100;
+  background-color: pink;
+  color: #333533;
+}
+.container nav ul li:hover .marker {
   font-size: 22px;
 }
 .container nav ul li:not(:last-child):after {
@@ -153,21 +164,40 @@ a {
 
 /*SECTIONS*/
 
+.resume {
+  display: none;
+}
+
+.marker {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333533;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  margin: 5px 0px 5px 5px;
+}
+
 .section {
-  width: 700px;
+  width: 600px;
   border-right: 1px solid #333533;
-  padding-right: 50px;
+  padding-right: 100px;
+  margin-right: 300px;
 }
-.section section:last-child {
-  width: 880px;
+section p {
+  line-height: 2;
+  font-weight: 600;
 }
-.contact {
-  display: flex;
+
+.contact .email {
+  width: 60%;
 }
-.contact div {
-  width: 50%;
+.contact .number {
+  width: 40%;
 }
-.contact p {
+.con .contact p {
   margin: 0px;
 }
 .contact i {
@@ -188,150 +218,29 @@ a {
   width: 56px;
   height: 56px;
 }
-
-.social li span.github {
-  background-image: url("../icons/social/github.png");
-}
-.social li span.github:hover {
-  background-image: url("../icons/social/social-hover/github-hover.png");
-}
-
-.social li span.linkedin {
-  background-image: url("../icons/social/linkedin.png");
-}
-.social li span.linkedin:hover {
-  background-image: url("../icons/social/social-hover/linkedin-hover.png");
-}
-.social li span.twitter {
-  background-image: url("../icons/social/twitter.png");
-}
-.social li span.twitter:hover {
-  background-image: url("../icons/social/social-hover/twitter-hover.png");
-}
 .social li span.whatsapp {
-  background-image: url("../icons/social/whatsapp.png");
+  background-image: url("../icons/whatsapp.png");
 }
 .social li span.whatsapp:hover {
-  background-image: url("../icons/social/social-hover/whatsapp-hover.png");
+  background-image: url("../icons/whatsapp-hover.png");
 }
 .social li span.instagram {
-  background-image: url("../icons/social/instagram.png");
+  background-image: url("../icons/instagram.png");
 }
 .social li span.instagram:hover {
-  background-image: url("../icons/social/social-hover/instagram-hover.png");
-}
-
-.social li span.stackoverflow {
-  background-image: url("../icons/social/stackoverflow.png");
-}
-.social li span.stackoverflow:hover {
-  background-image: url("../icons/social/social-hover/stackoverflow-hover.png");
+  background-image: url("../icons/instagram-hover.png");
 }
 
 .social li span.telegram {
-  background-image: url("../icons/social/telegram.png");
+  background-image: url("../icons/telegram.png");
 }
 .social li span.telegram:hover {
-  background-image: url("../icons/social/social-hover/telegram-hover.png");
+  background-image: url("../icons/telegram-hover.png");
 }
-.skills li {
-  border: 1px solid #a0a0a0;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 24px;
-  align-items: center;
-}
-.skills li img {
-  vertical-align: middle;
-  margin-left: 6px;
-}
-.skills .title {
-  font-weight: 600;
-}
-.skills li i {
-  padding: 10px 12px;
-  border-right: 1px solid #a0a0a0;
-}
-.other-skills li {
-  display: inline-block;
-  border: 1px solid #a0a0a0;
-  padding: 4px 16px;
-  border-radius: 24px;
-  margin: 0px 0px 18px 16px;
-}
-.My-projects {
-  border: 1px solid #a0a0a0;
-  border-radius: 8px;
-  padding: 11px;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-}
-.My-projects h5 {
-  font-weight: 500;
-  font-size: 18px;
-  margin-top: 10px;
-}
-.My-projects .description {
-  font-size: 14px;
-}
-.Tech-used {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 400;
+.skills li:not(:last-child) {
+  border-bottom: 1px solid #333533;
 }
 
-.Tech-used ul li {
-  display: inline-block;
-}
-.Tech-used ul li img {
-  width: 25px;
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-.My-projects {
-  margin-bottom: 36px;
-}
-.My-projects h5 {
-  margin-bottom: 5px;
-}
-.projects .My-projects:not(:last-child) {
-  margin-left: 20px;
-}
-.My-projects .buttens {
-  display: flex;
-}
-.My-projects .buttens a {
-  width: 50%;
-  color: #333533;
-  border: 1px solid transparent;
-  font-size: 13px;
-  padding: 2px 8px;
-  font-weight: 500;
-  text-align: center;
-}
-.My-projects.buttens a i {
-  margin-right: 5px;
-}
-.My-projects .buttens a:last-child {
-  margin-right: 4px;
-}
-.My-projects .buttens a:last-child,
-.My-projects .buttens a:first-child:hover {
-  border: 1px solid #333533;
-  border-radius: 4px;
-}
-.My-projects .buttens a:last-child:hover {
-  background-color: #333533;
-  color: #f5f5f5;
-}
 .mobile-nav {
   display: none;
 }

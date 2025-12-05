@@ -57,7 +57,12 @@
     background-color: #fafafa;
     color: #333533;
   }
-
+  .title .butten:hover {
+    font-size: 18px;
+  }
+  .title .butten:hover i {
+    background-color: #fafafa;
+  }
   .header .title {
     background-color: #fafafa;
     color: #333533;
@@ -97,7 +102,7 @@
   }
   .mobile-nav {
     display: block;
-    background-color: #333533;
+    background-color: #00eeff;
     color: #fafafa;
     margin-bottom: 0;
     position: fixed;
@@ -113,16 +118,18 @@
   }
 
   .mobile-nav ul li {
+    color: black;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+    cursor: pointer;
     flex: 1;
   }
   .mobile-nav ul li i {
     margin-right: 5px;
   }
   .mobile-nav ul li.act {
-    color: #ffd100;
-    border-bottom: 4px solid #ffd100;
+    color: black;
+    border-bottom: 8px solid black;
   }
 }
