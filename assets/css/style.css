@@ -114,7 +114,6 @@ a {
 .header img {
   width: 200px;
   height: 200px;
-
   border-radius: 50%;
 }
 .butten i {
@@ -135,7 +134,7 @@ a {
   cursor: pointer;
 }
 
-.container nav li.active {
+.container nav li {
   font-weight: 600;
 }
 
@@ -188,12 +187,7 @@ a {
   padding-left: 100px;
   margin-left: 250px;
 }
-/* .sections section:last-child {
-  width: 880px;
-} */
-/* .contact {
-  display: flex;
-} */
+
 .contact .email {
   width: 60%;
 }
@@ -210,7 +204,7 @@ a {
   cursor: pointer;
 }
 .contact i:hover {
-  color: #a0a0a0;
+  color: #333533;
 }
 .social li {
   display: inline-block;
@@ -244,101 +238,7 @@ a {
 .skills li:not(:last-child) {
   border-bottom: 1px solid #333533;
 }
-/* .skills li {
-  border: 1px solid #a0a0a0;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 24px;
-  align-items: center;
-}
-.skills li img {
-  vertical-align: middle;
-  margin-right: 6px;
-}
-.skills .title {
-  font-weight: 600;
-}
-.skills li i {
-  padding: 10px 12px;
-  border-left: 1px solid #a0a0a0;
-}
-.other-skills li {
-  display: inline-block;
-  border: 1px solid #a0a0a0;
-  padding: 4px 16px;
-  border-radius: 24px;
-  margin: 0px 16px 18px 0px;
-}
-.My-projects {
-  border: 1px solid #a0a0a0;
-  border-radius: 8px;
-  padding: 11px;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-}
-.My-projects h6 {
-  font-weight: 500;
-  font-size: 20px;
-  margin-top: 10px;
-}
-.My-projects .description {
-  font-size: 14px;
-}
-.Tech-used {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 400;
-}
 
-.Tech-used ul li {
-  display: inline-block;
-}
-.Tech-used ul li img {
-  width: 25px;
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-.My-projects {
-  margin-bottom: 36px;
-}
-.projects div:not(:last-child) {
-  margin-right: 20px;
-}
-.My-projects .buttens {
-  display: flex;
-}
-.My-projects .buttens a {
-  width: 50%;
-  color: #333533;
-  border: 1px solid transparent;
-  font-size: 13px;
-  padding: 2px 8px;
-  font-weight: 500;
-  text-align: center;
-}
-.My-projects .buttens a i {
-  margin-right: 5px;
-}
-.My-projects .buttens a:last-child {
-  margin-left: 4px;
-}
-.My-projects .buttens a:last-child,
-.My-projects .buttens a:first-child:hover {
-  border: 1px solid #333533;
-  border-radius: 4px;
-}
-.My-projects .buttens a:last-child:hover {
-  background-color: #333533;
-  color: #f5f5f5;
-} */
 .mobile-nav {
   display: none;
 }
