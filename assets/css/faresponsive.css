@@ -132,6 +132,9 @@
   }
   .mobile-nav ul li.act {
     color: black;
-    border-bottom: 8px solid black;
+    font-size: 18px;
+   
+  .mobile-nav ul li:not(:first-child) {
+    font-size: 13px !important;
   }
 }
